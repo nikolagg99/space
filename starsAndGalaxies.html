@@ -8,7 +8,7 @@
     <link rel="icon" href="style/icon.png" type="image/png" sizes="16x16">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="searchEngine.js"></script>
-    <script src="stars_&_galaxies.js"></script>
+    <script src="starsAndGalaxies.js"></script>
     <title>Космос</title>
 </head>
 <body onload="playAudio()">
@@ -19,10 +19,10 @@
         <div class="mainbar">
             <ul id="menu" class="mainList">
                 <li class="firstLink"><a href="index.html" onclick="initialFindMe()">Начало</a></li>
-                <li class="middleLink"><a href="Слънчева_Система.html" onclick="initialFindMe()">Слънчева система</a></li>
-                <li class="middleLink"><a href="Съзвездия.html" onclick="initialFindMe()">Съзвездия</a></li>
-                <li class="middleLink" id="selected"><a href="Звезди_и_галактики.html" onclick="initialFindMe()">Звезди и галактики</a></li>
-                <li class="lastLink"><a href="Развлечения.html" onclick="initialFindMe()">Развлечения</a></li>
+                <li class="middleLink"><a href="solarSystem.html" onclick="initialFindMe()">Слънчева система</a></li>
+                <li class="middleLink"><a href="constellations.html" onclick="initialFindMe()">Съзвездия</a></li>
+                <li class="middleLink" id="selected"><a href="starssAndGalaxies.html" onclick="initialFindMe()">Звезди и галактики</a></li>
+                <li class="lastLink"><a href="entertainment.html" onclick="initialFindMe()">Развлечения</a></li>
             </ul>
         </div>
         <div class="searchBar">
@@ -30,35 +30,35 @@
             <input type="text" id="searchInput" onkeydown="checkSuggestions()" placeholder="Търси">
             <div id="searchSuggestions">
                 <div><a class="suggestions" href="index.html">Начало</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html">Слънчева система</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(1)">Меркурий</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(2)">Венера</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(3)">Земя</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(4)">Марс</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(5)">Юпитер</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(6)">Сатурн</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(7)">Уран</a></div>
-                <div><a class="suggestions" href="Слънчева_Система.html" onclick="setFindMe(8)">Нептун</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="initialFindMe()">Съзвездия</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(1)">Рак</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(2)">Голямо куче</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(3)">Близнаци</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(4)">Колар</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(5)">Везни</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(6)">Орион</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(7)">Касиопеа</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(8)">Лъв</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(9)">Козирог</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(10)">Лебед</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(11)">Персей</a></div>
-                <div><a class="suggestions" href="Съзвездия.html" onclick="setFindMe(12)">Скорпион</a></div>
-                <div><a class="suggestions" href="Звезди_и_галактики.html" onclick="initialFindMe()">Звезди</a></div>
-                <div><a class="suggestions" href="Звезди_и_галактики.html#welcomeToPathOne">Малка звезда</a></div>
-                <div><a class="suggestions" href="Звезди_и_галактики.html#welcomeToPathTwo">Голяма звезда</a></div>
-                <div><a class="suggestions" href="Звезди_и_галактики.html#galaxyTypesInfo" onclick="initialFindMe()">Галактики</a></div>
-                <div><a class="suggestions" href="Развлечения.html">Тест</a></div>
-                <div><a class="suggestions" href="Развлечения.html">Игра</a></div>
-                <div><a class="suggestions" href="Развлечения.html">Галерия</a></div>
+                <div><a class="suggestions" href="solarSystem.html">Слънчева система</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(1)">Меркурий</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(2)">Венера</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(3)">Земя</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(4)">Марс</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(5)">Юпитер</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(6)">Сатурн</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(7)">Уран</a></div>
+                <div><a class="suggestions" href="solarSystem.html" onclick="setFindMe(8)">Нептун</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="initialFindMe()">Съзвездия</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(1)">Рак</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(2)">Голямо куче</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(3)">Близнаци</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(4)">Колар</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(5)">Везни</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(6)">Орион</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(7)">Касиопеа</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(8)">Лъв</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(9)">Козирог</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(10)">Лебед</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(11)">Персей</a></div>
+                <div><a class="suggestions" href="constellations.html" onclick="setFindMe(12)">Скорпион</a></div>
+                <div><a class="suggestions" href="starsAndGalaxies.html" onclick="initialFindMe()">Звезди</a></div>
+                <div><a class="suggestions" href="starsAndGalaxies.html#welcomeToPathOne">Малка звезда</a></div>
+                <div><a class="suggestions" href="starsAndGalaxies.html#welcomeToPathTwo">Голяма звезда</a></div>
+                <div><a class="suggestions" href="starsAndGalaxies.html#galaxyTypesInfo" onclick="initialFindMe()">Галактики</a></div>
+                <div><a class="suggestions" href="entertainment.html">Тест</a></div>
+                <div><a class="suggestions" href="entertainment.html">Игра</a></div>
+                <div><a class="suggestions" href="entertainment.html">Галерия</a></div>
             </div>
         </div>
         <div id="muteButtonsArea">
