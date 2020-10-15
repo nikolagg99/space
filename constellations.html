@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="style/icon.png" type="image/png" sizes="16x16">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,13 +16,16 @@
         <h1 class="mainTittle">Космос</h1>
     </header>
     <nav>
-        <div class="mainbar">
+        <div class="mainbar" id="mainbarDiv">
             <ul id="menu" class="mainList">
-                <li class="firstLink"><a href="index.html" onclick="initialFindMe()">Начало</a></li>
+                <li class="firstLink" id="selected"><a href="index.html" onclick="initialFindMe()">Начало</a></li>
                 <li class="middleLink"><a href="solarSystem.html" onclick="initialFindMe()">Слънчева система</a></li>
-                <li class="middleLink" id="selected"><a href="constellations.html" onclick="initialFindMe()">Съзвездия</a></li>
-                <li class="middleLink"><a href="starsAndGalaxies.html" onclick="initialFindMe()">Звезди и галактики</a></li>
+                <li class="middleLink"><a href="constellations.html" onclick="initialFindMe()">Съзвездия</a></li>
+                <li class="middleLink" id="starsAndGalaxies"><a href="starsAndGalaxies.html" onclick="initialFindMe()">Звезди и галактики</a></li>
                 <li class="lastLink"><a href="entertainment.html" onclick="initialFindMe()">Развлечения</a></li>
+                <li href="javascript:void(0);" class="icon" onclick="navigationFunction()">
+                    <i class="fa fa-bars" id="menuIcon"></i>
+                </li>
             </ul>
         </div>
         <div class="searchBar">

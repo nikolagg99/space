@@ -1,4 +1,17 @@
 ﻿// JavaScript source code
+/*------------nav---------- */
+
+function navigationFunction() {
+    var x = document.getElementById("menu");
+    if (x.className === "mainbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainbar";
+    }
+
+}
+/*-----------end----nav----- */
+
 function showPopupImgCnc() {
     var popup = document.getElementById("myPopupImgCnc");
     popup.classList.add("showImg");
