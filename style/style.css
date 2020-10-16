@@ -1924,9 +1924,12 @@ div.galaxyType {
     .mapOfPlanets {
         overflow-x: scroll;
     }
+<<<<<<< HEAD
     .constellationPresentation{
         overflow-x:scroll;
     }
+=======
+>>>>>>> afbb00e80a8971f10cd36287338b77ce98e8af54
 }
 
 .symbolPopup {
