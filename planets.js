@@ -1,4 +1,16 @@
 ﻿// JavaScript source code
+/*------------nav---------- */
+
+function navigationFunction() {
+    var x = document.getElementById("menu");
+    if (x.className === "mainbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainbar";
+    }
+
+}
+/*-----------end----nav----- */
 /*--------------------------аудио-------------------*/
 var audio;
 function playAudio() {

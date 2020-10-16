@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="style/icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="searchEngine.js"></script>
     <script src="entertainment.js" charset="utf-8"></script>
@@ -16,13 +19,16 @@
         <h1 class="mainTittle">Космос</h1>
     </header>
     <nav>
-        <div class="mainbar">
+        <div class="mainbar" id="mainbarDiv">
             <ul id="menu" class="mainList">
-                <li class="firstLink"><a href="index.html" onclick="initialFindMe()">Начало</a></li>
+                <li class="firstLink" id="selected"><a href="index.html" onclick="initialFindMe()">Начало</a></li>
                 <li class="middleLink"><a href="solarSystem.html" onclick="initialFindMe()">Слънчева система</a></li>
                 <li class="middleLink"><a href="constellations.html" onclick="initialFindMe()">Съзвездия</a></li>
-                <li class="middleLink"><a href="starsAndGalaxies.html" onclick="initialFindMe()">Звезди и галактики</a></li>
-                <li class="lastLink" id="selected"><a href="entertainment.html" onclick="initialFindMe()">Развлечения</a></li>
+                <li class="middleLink" id="starsAndGalaxies"><a href="starsAndGalaxies.html" onclick="initialFindMe()">Звезди и галактики</a></li>
+                <li class="lastLink"><a href="entertainment.html" onclick="initialFindMe()">Развлечения</a></li>
+                <li href="javascript:void(0);" class="icon" onclick="navigationFunction()">
+                    <i class="fa fa-bars" id="menuIcon"></i>
+                </li>
             </ul>
         </div>
         <div class="searchBar">
@@ -71,7 +77,7 @@
             <!-------------------------НАВИГАЦИЯ------------------------------------>
             <div id="entertainmentMenu">
 
-                <div class="entertainmentMenuOptions" id="test">
+                <div class="testClass" id="test">
                     <div class="avatarDiv">
                         <img src="style/test.png" alt="test" class="imageAvatar" />
                         <div class="avatar">
@@ -80,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="entertainmentMenuOptions" id="game">
+                <div class="testClass" id="game">
                     <div class="avatarDiv">
                         <img src="style/game.png" alt="game" class="imageAvatar" />
                         <div class="avatar">
@@ -89,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="entertainmentMenuOptions" id="gallery">
+                <div class="testClass" id="galleryEnt">
                     <div class="avatarDiv">
                         <img src="style/gallery.png" alt="gallery" class="imageAvatar" />
                         <div class="avatar">
@@ -102,7 +108,7 @@
 
             <!-------------------------НАВИГАЦИЯ-/КРАЙ/----------------------------------->
             <!----------------------ГАЛЕРИЯ-------------------------->
-            <div>
+            <div class="mainDivGallery">
 
 
                 <div class="container" id="imageGalleryEntertainment">
@@ -221,7 +227,7 @@
             </div>
             <!----------------------ГАЛЕРИЯ-/КРАЙ/------------------------->
             <!----------------------------ИГРА----------------------------->
-            <div>
+            <div class="mainDivGame">
                 <div id="gameLevels">
                     <button class="buttonLevels" id="buttonGameLevelOne" onclick="letsPlay()"><b>НИВО 1</b></button>
                     <button class="buttonLevels" id="buttonGameLevelTwo" onclick="letsPlayLevelTwo()"><b>НИВО 2</b></button>
